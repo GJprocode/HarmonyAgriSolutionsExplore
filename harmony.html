@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarmonyAgri Solutions Pty Ltd</title>
+    <link rel="stylesheet" href="harmony.css">
+    <script>
+        // JavaScript to display only the clicked section as a "scene change"
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll(".content-section");
+            sections.forEach(section => {
+                section.classList.remove("active");
+            });
+            document.getElementById(sectionId).classList.add("active");
+        }
+
+        // Initialize the homepage as active on load
+        document.addEventListener("DOMContentLoaded", function () {
+            showSection('homeContent');
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="logo.png"  class="logo"> <!-- Add a class here -->
+        <h1>HarmonyAgri Solutions Pty Ltd</h1>
+        <p class="tagline">"If the community does not benefit, we do not do it"</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="showSection('homeContent')">Home</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('missionContent')">Mission, Vision & Values</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('partnersContent')">Partners</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('aboutContent')">About Us</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('contactContent')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Sections -->
+    <section id="homeContent" class="content-section active">
+        <h2>Overview</h2>
+        <p>At HarmonyAgri Solutions Pty Ltd, we integrate expertise in agriculture and forestry with advanced technology to revolutionize modern farming and supply chain processes.</p>
+        <div class="thumbnail-gallery">
+            <div class="href">
+                <a href="image1.jpg">
+                    <img src="image1.jpg"  class="thumbnail">
+                </a>
+            </div>
+            <div class="href">
+                <a href="image2.jpg">
+                    <img src="image2.jpg"  class="thumbnail">
+                </a>
+            </div>
+            <div class="href">
+                <a href="image3.jpg">
+                    <img src="image3.jpg"  class="thumbnail">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="missionContent" class="content-section">
+        <h2>Mission, Vision & Values</h2>
+        <p>Our mission is to build trust, foster long-term partnerships, and reduce costs through sustainable and science-driven solutions.</p>
+        <div class="thumbnail-gallery">
+            <div class="href">
+                <a href="image4.jpg">
+                    <img src="image4.jpg" class="thumbnail">
+                </a>
+            </div>
+            <div class="href">
+                <a href="image5.jpg">
+                    <img src="image5.jpg"  class="thumbnail">
+                </a>
+            </div>
+            <div class="href">
+                <a href="image6.jpg">
+                    <img src="image6.jpg"  class="thumbnail">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="partnersContent" class="content-section">
+        <h2>Partners</h2>
+        <p>We partner with CMO Group, SoilTech, CarbonBio, and Drone Khmer Technology (DKT) to provide sustainable solutions in agriculture and forestry.</p>
+        <div class="thumbnail-gallery">
+            <div class="href">
+                <a href="image7.jpg">
+                    <img src="image7.jpg"  class="thumbnail">
+                </a>
+            </div>
+            <div class="href">
+                <a href="image8.jpg">
+                    <img src="image8.jpg"  class="thumbnail">
+                </a>
+            </div>
+            <div class="href">
+                <a href="image9.jpg">
+                    <img src="image9.jpg" a class="thumbnail">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutContent" class="content-section">
+        <h2>About Us</h2>
+        <p>Founded in 2023, HarmonyAgri Solutions Pty Ltd offers services in surveying and mapping, agri-drone training, services and sales, Organic pest and disease management, and software solutions for agroforestry.</p>
+        <div class="thumbnail-gallery">
+            <div class="href">
+                <a href="image10.jpg">
+                    <img src="image10.jpg"  class="thumbnail">
+                </a>
+            </div>
+            <div class="href">
+                <a href="image11.jpg">
+                    <img src="image11.jpg"  class="thumbnail">
+                </a>
+            </div>
+            <div class="href">
+                <a href="image12.jpg">
+                    <img src="image12.jpg"  class="thumbnail">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactContent" class="content-section">
+        <h2>Contact Us</h2>
+        <p>Phone: (+27) 72 900 4948 RSA</p>
+        <p>Phone: (+855) 877 57 885 Cambodia</p>
+        <p>Email: <a href="mailto:gertfou@gmail.com">gertfou@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/company/harmonyagri-solutions/" target="_blank" rel="noopener noreferrer">HarmonyAgri Solutions</a></p>
+        <p>Founder: Gert Johannes Fourie</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 HarmonyAgri Solutions Pty Ltd - All Rights Reserved</p>
+        <p>Company Registration Number: Coming soon</p>
+        <a href="javascript:void(0);" onclick="showSection('terms')">Terms of Service</a> | <a href="javascript:void(0);" onclick="showSection('privacy')">Privacy Policy</a>
+    </footer>
+
+    <!-- Terms of Service & Privacy Policy -->
+    <section id="terms" class="content-section">
+        <h2>Terms of Service</h2>
+        <p>HarmonyAgri Solutions Pty Ltd provides software development, agricultural consulting, and technology solutions to clients. Our services are provided as-is, and we ensure compliance with applicable laws in each country we operate. Clients agree to provide accurate information and abide by local regulations.</p>
+    </section>
+
+    <section id="privacy" class="content-section">
+        <h2>Privacy Policy</h2>
+        <p>Your privacy is important to us. We collect information to provide our services effectively, including personal and project details shared during consultations. HarmonyAgri Solutions Pty Ltd complies with all local and international data protection laws.</p>
+    </section>
+
+</body>
+</html>

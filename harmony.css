@@ -1,0 +1,161 @@
+/* CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header .tagline {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Subheader styling */
+.subheader {
+    background-color: #e8f5e9;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.subheader button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.subheader button:hover {
+    background-color: #45a049;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    list-style-type: none;
+    padding: 0.5rem 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #4CAF50;
+    border-radius: 4px;
+}
+
+.content-section {
+    padding: 2rem;
+    display: none;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    background-color: #ddd;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures any overflow is hidden */
+}
+
+.thumbnail img {
+    width: 100%; /* Makes image take full width of the thumbnail */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Adjusts image size without stretching */
+}
+
+/* Larger screen adjustments */
+@media (min-width: 992px) {
+    .thumbnail {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thumbnail-gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .thumbnail {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 100px;  /* Set the logo size */
+    height: auto;  /* Maintains aspect ratio */
+}
